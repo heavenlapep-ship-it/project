@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Registration</a>
+        <a href="data.html">Data Table</a>
+    </nav>
+
+    <div class="container" style="max-width: 900px;">
+        <h2>User Records Data Table</h2>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search by name or city...">
+            <button id="sortNameBtn">Sort by Name</button>
+            <button id="sortAgeBtn">Sort by Age</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Data rows generated dynamically by JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
